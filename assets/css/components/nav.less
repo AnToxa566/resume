@@ -2,23 +2,48 @@
 
 .nav {
     &__link {
+        position: relative;
+
         font-size: 0.875rem;
         font-weight: bold;
         text-decoration: none;
         text-transform: uppercase;
 
-        padding: 10px 30px;
-        margin: 0 5px;
+        margin: 0 15px;
 
-        border-bottom: 2px solid transparent;
+        &:after {
+            content: "";
+            position: absolute;
 
-        &:hover {
-            border-color: @black;
+            bottom: -3px;
+            left: 0;
+
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: @black;
+
+            transition: width .2s linear;
         }
-    }
 
-    &__btn {
-        border: 2px solid @black;
-        border-radius: 20px;
+        &:hover:not(.nav__link--btn) {
+            &:after {
+                width: 100%;
+            }
+        }
+
+        &--btn {
+            padding: 10px 30px;
+    
+            border: 2px solid @black;
+            border-radius: 20px;
+
+            transition: all 0.2s linear;
+
+            &:hover {
+                background-color: @black;
+                color: @white;
+            }
+        }
     }
 }
