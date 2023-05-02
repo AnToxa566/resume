@@ -1,0 +1,36 @@
+// main: ../style.less
+
+.work__item {
+    overflow: hidden;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 2px fade(#000, 25%);
+
+    cursor: pointer;
+    transition: all .2s linear;
+
+    &-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &-content {
+        padding: 0.9375rem;
+        text-transform: uppercase;
+    }
+
+    &-cat {
+        font-size: 0.75rem;
+        margin-bottom: 0.3125rem;
+    }
+
+    &-title {
+        display: flex;
+        justify-content: space-between;
+
+        font-weight: bold;
+    }
+
+    &:hover {
+        box-shadow: 0 0 15px fade(#000, 25%);
+    }
+}

@@ -15,12 +15,12 @@
     color: @white;
     background-color: @black;
 
-    filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.24 ));
+    box-shadow: 2px 2px 5px fade(#000, 25%);
 
     transition: all .2s linear;
 
     &:hover:not(.btn--outline) {
-        transform: translateY(-5px);
+        box-shadow: 2px 2px 25px fade(#000, 25%);
     }
 
     &--outline {
@@ -34,5 +34,10 @@
             border-color: @black;
             background-color: @black;
         }
+    }
+
+    &--sm {
+        font-size: 0.875rem;
+        padding: 0.625rem 0.875rem;
     }
 }
