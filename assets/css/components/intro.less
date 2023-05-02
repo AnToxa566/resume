@@ -1,0 +1,58 @@
+// main: ../style.less
+
+.intro {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        border-bottom: 1px solid @gray;
+        border-color: rgba(@gray, 0.3) 
+    }
+
+    &__title {
+        font-size: 2.8125rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+
+    &__body {
+        font-size: 1.125rem;
+        opacity: 0.70;
+        margin-bottom: 25px;
+    }
+
+    &__buttons {
+        display: flex;
+    }
+
+    &__photo {
+        position: relative;
+
+        height: 500px;
+        width: 470px;
+    }
+
+    &__symbols {
+        position: absolute;
+
+        bottom: 0;
+        right: 0;
+
+        z-index: 1;
+    }
+
+    &__person {
+        position: absolute;
+
+        bottom: 0;
+        right: 0;
+
+        z-index: 2;
+    }
+}

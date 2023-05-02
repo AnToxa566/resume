@@ -6,10 +6,7 @@ html {
     font-size: 16px;
 }
 
-body, a {
-    margin: 0;
-    padding: 0;
-
+body {
     font-size: 1rem;
     font-weight: normal;
     font-family: 'Montserrat', sans-serif;
@@ -22,7 +19,14 @@ body, a {
     box-sizing: border-box;
 }
 
+a {
+    color: @black;
+}
+
 @import "./components/container.less";
+@import "./components/btn.less";
 @import "./components/header.less";
 @import "./components/user.less";
 @import "./components/nav.less";
+@import "./components/intro.less";
+@import "./components/social.less";

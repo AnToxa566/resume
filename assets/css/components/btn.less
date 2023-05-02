@@ -1,0 +1,38 @@
+// main: ../style.less
+
+.btn {
+    display: block;
+    width: fit-content;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+
+    padding: 1rem 3rem;
+    margin-right: 1rem;
+    border-radius: 50vh;
+
+    color: @white;
+    background-color: @black;
+
+    filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.24 ));
+
+    transition: all .2s linear;
+
+    &:hover:not(.btn--outline) {
+        transform: translateY(-5px);
+    }
+
+    &--outline {
+        border: 1px solid @gray;
+
+        color: @gray;
+        background-color: transparent;
+
+        &:hover {
+            color: @white;
+            border-color: @black;
+            background-color: @black;
+        }
+    }
+}
