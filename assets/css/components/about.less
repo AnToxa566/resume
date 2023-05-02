@@ -1,0 +1,62 @@
+// main: ../style.less
+
+.about {
+    margin: 7.875rem 0;
+
+    &__inner {
+        max-width: 1090px;
+    }
+
+    &__photo,
+    &__content {
+        width: 50%;
+    }
+
+    &__photo {
+        position: relative;
+
+        img {
+            position: relative;
+            z-index: 2;
+        }
+        
+        padding-right: 3.75rem;
+
+        &:before {
+            content: "";
+
+            width: 414px;
+            height: 414px;
+
+            background: #efefef;
+
+            position: absolute;
+
+            bottom: 0;
+            left: 1.125rem;
+
+            z-index: 1;
+        }
+    }
+
+    &__title {
+        font-size: 2.8125rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__subtitle {
+        font-size: 92px;
+        opacity: 0.05;
+
+        margin-bottom: 2rem;
+    }
+
+    &__body {
+        line-height: 1.5rem;
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: @gray;
+
+        margin-bottom: 2.5rem;
+    }
+}
