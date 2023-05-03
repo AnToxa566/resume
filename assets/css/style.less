@@ -9,6 +9,10 @@ body {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     color: @black;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 *,
@@ -40,6 +44,8 @@ a {
 @import "./components/articles.less";
 @import "./components/article.less";
 @import "./components/footer.less";
+@import "./components/modal.less";
+@import "./components/modal-work.less";
 
 
 /* Helpers */

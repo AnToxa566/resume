@@ -278,7 +278,7 @@
                     <img class="review__author-photo center" src="https://placehold.it/100" alt="Rewie author's photo">
 
                     <div class="review__author-name fw-bold">Edward M.</div>
-                    <div class="review__author-com fw-light">Marketing House</div>
+                    <div class="review__author-com fw-light fs-italic">Marketing House</div>
                     <div class="review__author-raiting d-flex justify-center">
                         <img src="./assets/img/star.png" alt="Star icon">
                         <img src="./assets/img/star.png" alt="Star icon">
@@ -411,8 +411,55 @@
                         <a href="#" class="footer__nav-link">Contact</a>
                         <a href="#" class="footer__nav-link footer__nav-link--btn">Hire me</a>
                     </nav>
-                </div>
-            </div>
-        </footer>
+                </div> <!-- /.footer__inner -->
+            </div> <!-- /.container -->
+        </footer> <!-- /.footer -->
+
+
+        <!-- Modals -->
+
+        <div class="modal d-flex d-none">
+            <div class="modal__dialog">
+
+                <img class="modal__dialog-close" src="./assets/svg/close_icon.svg" alt="Close icon">
+                
+                <div class="modal-work d-flex">
+                    <div class="modal-work__preview">
+                        <img class="modal-work__photo" src="https://placehold.it/800x600" alt="Project preview">
+                    </div>
+
+                    <div class="modal-work__content">
+                        <h3 class="modal-work__title fw-bold text-uppercase">Project title</h3>
+
+                        <div class="modal-work__cat text-color-gray text-uppercase">Category | 2018</div>
+
+                        <div class="modal-work__client fw-bold">
+                            Client:
+                        </div>
+                        <div class="modal-work__com fs-italic text-color-gray">
+                            Creative Agency
+                        </div>
+
+                        <div class="modal-work__body text-color-gray fw-light">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis perferendis officiis explicabo quibusdam ea hic pariatur porro quae exercitationem. Tempora, explicabo animi dolore dolorem pariatur cum architecto commodi accusantium labore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis perferendis officiis explicabo quibusdam ea hic pariatur porro quae exercitationem. Tempora, explicabo animi dolore dolorem pariatur cum architecto commodi accusantium labore.
+                        </div>
+
+                        <div class="modal-work__buttons d-flex justify-sb">
+                            <div class="modal-work__button d-flex align-center">
+                                <img class="modal-work__arrow" src="./assets/svg/left_arrow_icon.svg" alt="Left arrow icon">
+                                <button class="modal-work__button">Previous</button>
+                            </div>
+                            
+                            <div class="modal-work__button d-flex align-center">
+                                <button class="modal-work__button">Next</button>
+                                <img class="modal-work__arrow" src="./assets/svg/right_arrow_icon.svg" alt="Right arrow icon">
+                            </div>
+                        </div>
+                    </div> <!-- /.modal-work__content -->
+                </div> <!-- /.modal-work -->
+
+            </div> <!-- /.modal__dialog -->
+        </div> <!-- /.modal -->
+
     </body>
 </html>
