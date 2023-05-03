@@ -1,0 +1,147 @@
+// main: ../style.less
+
+.modal-resume {
+    padding: 5rem 2rem 3.75rem;
+
+    h4 {
+        font-size: 1.125rem;
+    }
+
+    &__title {
+        font-size: 2.8125rem;
+        margin-bottom: 3.375rem;
+    }
+
+    &__buttons {
+        margin-bottom: 4rem;
+
+        button {
+            margin: 0 0.5rem;
+        }
+    }
+
+    &__content {
+        max-width: 768px;
+        width: 100%;
+        
+        margin-bottom: 4.75rem;
+    }
+
+    &__left-col,
+    &__right-col {
+        width: 50%;
+    }
+
+    &__divider {
+        width: 1px;
+        background-color: @gray;
+
+        align-self: stretch;
+        margin: 0 3rem;
+    }
+
+
+    /* Font sizes */
+
+    &__exp-body,
+    &__aw-body {
+        font-size: 0.75rem;
+    }
+
+    &__exp-years,
+    &__exp-job,
+    &__ed-years,
+    &__ed-institution,
+    &__aw-product,
+    &__aw-year,
+    &__skill-item  {
+        font-size: 0.875rem;
+    }
+
+
+    /* Margins */
+
+    &__exp-com,
+    &__ed-specialty,
+    &__aw-name {
+        margin-bottom: 0.25rem;
+    }
+
+    &__exp-job,
+    &__skill-item {
+        margin-bottom: 0.5rem;
+    }
+
+    &__exp-years,
+    &__ed-years,
+    &__aw-product {
+        margin-bottom: 0.75rem;
+    }
+
+    &__exp,
+    &__exp-title,
+    &__ed,
+    &__ed-title {
+        margin-bottom: 2.25rem;
+    }
+
+    &__exp {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__skills {
+        margin-bottom: 2rem;
+    }
+
+    &__sk-title {
+        margin-bottom: 1.625rem;
+    }
+
+    &__skill-item {
+        position: relative;
+        
+        &:after,
+        &:before {
+            content: "";
+
+            position: absolute;
+            top: 50%;
+            left: 30%;
+
+            height: 6px;
+            transform: translate3d(0, -50%, 0);
+        }
+
+        &:before {
+            z-index: 2;
+            width: 7.5rem;
+
+            background-color: @gray;
+        }
+
+        &:after {
+            z-index: 1;
+            width: 8.75rem;
+
+            background-color: #efefef;
+        }
+    }
+
+    &__aw {
+        margin-bottom: 2rem;
+
+        &-title {
+            margin-bottom: 1.875rem;
+        }
+
+        &-year {
+            margin-right: 0.5rem;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
