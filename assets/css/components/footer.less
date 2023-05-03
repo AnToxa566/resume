@@ -1,0 +1,69 @@
+// main: ../style.less
+
+.footer {
+    font-size: 0.875rem;
+    padding: 1.25rem 0;
+
+    &__social {
+        &-link {
+            margin-right: 1.5rem;
+            transition: all .2s linear;
+
+            &:hover {
+                transform: translateY(-2px);
+            }
+        }
+
+        &-icon {
+            max-height: 1.5rem;
+            width: auto;
+        }
+    }
+
+    &__nav {
+        &-link {
+            position: relative;
+
+            text-decoration: none;
+            color: @gray-light;
+
+            margin-left: 0.625rem;
+
+            &:after {
+                content: "";
+
+                position: absolute;
+
+                bottom: -2px;
+                left: 0;
+
+                width: 0;
+                height: 2px;
+
+                background-color: @gray-light;
+
+                transition: all .2s linear;
+            }
+
+            &:hover:not(.footer__nav-link--btn) {
+                &:after {
+                    width: 100%;
+                }
+            }
+
+            &--btn {
+                text-transform: uppercase;
+                border: 1px solid @gray-light;
+                border-radius: 50vh;
+
+                padding: 0.5rem 1.125rem;
+                transition: all .2s linear;
+
+                &:hover {
+                    color: @black;
+                    background-color: @gray-light;
+                }
+            }
+        }
+    }
+}
