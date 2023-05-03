@@ -1,0 +1,41 @@
+// main: ../style.less
+
+.article__item {
+    position: relative;
+    z-index: 1;
+
+    &-date {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        padding: 1.25rem;
+        background-color: @black;
+
+        z-index: 2;
+    }
+
+    &-photo {
+        margin-bottom: 1.25rem;
+    }
+
+    &-title {
+        font-size: 1.125rem;
+        margin-bottom: 0.4375rem;
+    }
+
+    &-cat {
+        font-size: 0.75rem;
+        margin-bottom: 1.375rem;
+    }
+
+    &-body {
+        max-height: 6.375rem;
+        overflow: hidden;
+
+        font-size: 0.75rem;
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
