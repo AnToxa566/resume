@@ -15,7 +15,7 @@
         <title>Portfolio</title>
     </head>
 
-    <body class="no-scroll">
+    <body>
 
         <!-- Header -->
 
@@ -462,7 +462,7 @@
         </div> <!-- /.modal -->
 
 
-        <div class="modal d-flex">
+        <div class="modal d-flex d-none">
             <div class="modal__dialog">
 
                 <img class="modal__dialog-close" src="./assets/svg/close_icon.svg" alt="Close icon">
@@ -584,5 +584,52 @@
             </div> <!-- /.modal__dialog -->
         </div> <!-- /.modal -->
 
+        <div class="modal d-flex d-none">
+            <div class="modal__dialog modal__dialog--sm">
+
+                <img class="modal__dialog-close" src="./assets/svg/close_icon.svg" alt="Close icon">
+                
+                <div class="modal-contact d-flex">
+
+                    <div class="modal-contact__left">
+                        <h3 class="modal-contact__title fw-bold text-uppercase">Let's talk!</h3>
+
+                        <h3 class="modal-contact__subtitle text-uppercase">Call me or send me a request</h3>
+
+                        <div class="modal-contact__content">
+                            <div class="modal-contact__phone d-flex fw-light align-center">
+                                <img  src="./assets/svg/phone_icon.svg" alt="Phone icon">
+                                +38 (099) 112 4364
+                            </div>
+
+                            <div class="modal-contact__email d-flex fw-light align-center">
+                                <img src="./assets/svg/mail_icon.svg" alt="Mail icon">
+                                bogachuk566@gmail.com
+                            </div>
+                        </div>
+
+                        <form class="form" action="/" method="post">
+                            <div class="form__group d-flex fd-column">
+                                <label for="email-input" class="label">Adress e-mail</label>
+                                <input type="text" class="input" id="email-input" placeholder="email@address.com">
+                            </div>ы
+
+                            <div class="form__group d-flex fd-column">
+                                <label for="request-textarea" class="label">Request</label>
+                                <textarea class="textarea" id="request-textarea" placeholder="Type your request..."></textarea>
+                            </div>
+
+                            <div class="d-flex justify-end">
+                                <button class="btn" type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div> <!-- /.modal-contact__left -->
+
+                    <div class="modal-contact__right"></div>
+
+                </div> <!-- /.modal-contact -->
+
+            </div> <!-- /.modal__dialog -->
+        </div> <!-- /.modal -->
     </body>
 </html>

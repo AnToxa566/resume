@@ -1,0 +1,42 @@
+// main: ../style.less
+
+.modal-contact {
+    &__left {
+        padding: 1.875rem 2.1875rem 2.5rem;
+        width: 48%;
+    }
+
+    &__right {
+        width: 52%;
+        background: url(https://placehold.it/600x1000) center no-repeat;
+        background-size: cover;
+    }
+
+    &__title {
+        font-size: 2.8125rem;
+        margin-bottom: 0.25rem;
+    }
+
+    &__subtitle {
+        margin-bottom: 2rem;
+    }
+
+    &__phone,
+    &__email {
+        font-size: 0.875rem;
+        margin-bottom: 0.5rem;
+
+        img {
+            max-height: 1.25rem;
+            margin-right: 0.5rem;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__content {
+        margin-bottom: 2.75rem;
+    }
+}
