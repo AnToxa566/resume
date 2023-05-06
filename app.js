@@ -64,7 +64,7 @@ addClickListenerToShowModal(document.querySelectorAll(".resume-btn"), document.q
 
 // ========= WORK MODAL =========
 
-addClickListenerToShowModal(document.querySelectorAll(".work__item"), document.querySelector("#modal-work"));
+// addClickListenerToShowModal(document.querySelectorAll(".work__item"), document.querySelector("#modal-work"));
 
 
 // ==========================
