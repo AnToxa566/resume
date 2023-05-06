@@ -41,7 +41,7 @@
                     <nav class="nav">
                         <a href="#works" class="nav__link fw-bold">Work</a>
                         <a href="#about" class="nav__link fw-bold">About me</a>
-                        <a href="#blog" class="nav__link fw-bold">Blog</a>
+                        <a href="#" class="nav__link fw-bold resume-btn">Resume</a>
                         <a href="#" class="nav__link nav__link--btn fw-bold hire-me-btn">Hire me</a>
                     </nav>
                 </div> <!-- /.header__inner -->
@@ -224,7 +224,7 @@
 
         <!-- Review -->
 
-        <div class="review">
+        <div class="review d-none">
             <div class="container">
                 <div class="review__content text-color-white text-center center">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rem ipsum praesentium consequatur amet? Inventore incidunt fugit cum natus vero, sequi accusantium est quaerat nihil magnam quae in praesentium assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rem ipsum praesentium consequatur amet?
@@ -248,7 +248,7 @@
 
         <!-- Blog -->
 
-        <section class="blog" id="blog">
+        <section class="blog d-none" id="blog">
             <div class="container">
                 <h2 class="blog__title text-center fw-bold text-uppercase">Read me</h2>
                 <h3 class="blog__subtitle text-color-gray-light text-center fw-light">Sometimes I write something smart</h3>
@@ -367,7 +367,7 @@
                     <nav class="footer__nav">
                         <a href="#works" class="footer__nav-link">Work</a>
                         <a href="#about" class="footer__nav-link">About Me</a>
-                        <a href="#blog" class="footer__nav-link">Blog</a>
+                        <a href="#" class="footer__nav-link resume-btn">Resume</a>
                         <a href="#" class="footer__nav-link footer__nav-link--btn hire-me-btn">Hire me</a>
                     </nav>
                 </div> <!-- /.footer__inner -->
@@ -540,15 +540,15 @@
                             </div>
                         </div>
 
-                        <form class="form" action="/" method="post">
+                        <form class="form" action="./send_mail.php" method="POST">
                             <div class="form__group d-flex fd-column">
                                 <label for="email-input" class="label">Adress e-mail</label>
-                                <input type="text" class="input" id="email-input" placeholder="email@address.com">
+                                <input type="text" class="input" id="email-input" name="email" placeholder="email@address.com" required>
                             </div>
 
                             <div class="form__group d-flex fd-column">
                                 <label for="request-textarea" class="label">Request</label>
-                                <textarea class="textarea" id="request-textarea" placeholder="Type your request..."></textarea>
+                                <textarea class="textarea" id="request-textarea" name="request" placeholder="Type your request..." required></textarea>
                             </div>
 
                             <div class="d-flex justify-end">
