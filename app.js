@@ -111,5 +111,5 @@ const downloadResumeButtons = document.querySelectorAll('.download-resume');
 
 downloadResumeButtons.forEach(button => button.addEventListener('click', event => {
     event.preventDefault();
-    downloadFile('./assets/files/resume.pdf', 'test.pdf');
+    downloadFile('./assets/files/resume.pdf', 'resume.pdf');
 }))
