@@ -1,35 +1,5 @@
 // compress: true
 
-html {
-    font-size: 16px;
-    scroll-behavior: smooth;
-}
-
-body {
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
-    color: @black;
-
-    &.no-scroll {
-        overflow: hidden;
-    }
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-a {
-    color: @black;
-}
-
-b {
-    font-weight: 700;
-}
-
 /* Components */
 
 @import "./components/container.less";
@@ -62,3 +32,41 @@ b {
 
 @import "vars";
 @import "helpers";
+
+
+/* style.less */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+::selection {
+    color: @white;
+    background-color: @black;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: @black;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+a {
+    color: @black;
+}
+
+b {
+    font-weight: 700;
+}
