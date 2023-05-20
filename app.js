@@ -38,18 +38,26 @@ const addClickListenerToShowModal = (buttons, modal) =>{
 
 // ========= MODAL CLOSE BUTTON =========
 
-const closeModalButtons = document.querySelectorAll(".modal__dialog-close");
+const closeModalButtons = document.querySelectorAll(".modal__dialog__close-link");
 const modals = document.querySelectorAll(".modal");
+
+const closeModals = () => {
+    document.body.classList.remove("no-scroll");
+    modals.forEach(modal => modal.classList.add("d-none"))
+}
 
 closeModalButtons.forEach(closeBtn => {
     closeBtn.addEventListener("click", event => {
         event.preventDefault();
-
-        document.body.classList.remove("no-scroll");
-
-        modals.forEach(modal => modal.classList.add("d-none"))
+        closeModals();
     })
 })
+
+document.addEventListener('keydown', event => {
+    if (event.code == 'Escape') {
+        closeModals();
+    }
+});
 
 
 // ========= HIRE ME MODAL =========
