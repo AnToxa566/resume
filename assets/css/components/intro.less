@@ -2,8 +2,11 @@
 
 .intro {
     &__inner {
+        display: flex;
+        justify-content: space-between;
+
         border-bottom: 1px solid @gray;
-        border-color: rgba(@gray, 0.3) 
+        border-color: rgba(@gray, 0.3);
     }
 
     &__title {
@@ -29,21 +32,52 @@
         width: 470px;
     }
 
-    &__symbols {
-        position: absolute;
-
-        bottom: 0;
-        right: 0;
-
-        z-index: 1;
-    }
-
+    &__symbols,
     &__person {
         position: absolute;
 
         bottom: 0;
         right: 0;
 
+        max-width: 100%;
+        height: auto;
+
+        z-index: 1;
+    }
+
+    &__symbols {
+        z-index: 1;
+    }
+
+    &__person {
         z-index: 2;
+    }
+
+    &__buttons {
+        &-item:last-child {
+            margin-right: 0;
+        } 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        &__inner {
+            justify-content: center;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 2.5rem 0;
+        }
+
+        &__photo {
+            display: none;
+        }
     }
 }

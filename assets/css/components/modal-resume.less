@@ -21,6 +21,9 @@
     }
 
     &__content {
+        display: flex;
+        justify-content: center;
+
         max-width: 768px;
         width: 100%;
         
@@ -30,6 +33,10 @@
     &__left-col,
     &__right-col {
         width: 50%;
+    }
+
+    &__left-col {
+        text-align: right;
     }
 
     &__divider {
@@ -142,6 +149,53 @@
 
         &:last-of-type {
             margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal-resume {
+        &__skill-item {
+            margin-bottom: 2rem;
+            
+            &:after,
+            &:before {
+                top: 150%;
+                left: 0;
+
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .modal-resume {
+        &__content {
+            flex-direction: column;
+        }
+
+        &__left-col {
+            text-align: left;
+        }
+
+        &__left-col,
+        &__right-col {
+            width: 100%;
+        }
+
+        &__divider {
+            display: none;
+        }
+
+        &__exp-title,
+        &__ed-title,
+        &__sk-title {
+            text-align: center;
+        }
+
+        &__ed-title {
+            margin: 2.25rem 0;
         }
     }
 }

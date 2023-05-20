@@ -38,12 +38,18 @@
                         </div>
                     </div> <!-- /.user -->
 
-                    <nav class="nav">
-                        <a href="#works" class="nav__link fw-bold">Work</a>
-                        <a href="#about" class="nav__link fw-bold">About me</a>
-                        <a href="#" class="nav__link fw-bold resume-btn">Resume</a>
-                        <a href="#" class="nav__link nav__link--btn fw-bold hire-me-btn">Hire me</a>
-                    </nav>
+                    <div class="nav__inner">
+                        <a href="#" class="nav__icon-link">
+                            <img class="nav__icon" id="nav__icon" src="./assets/svg/nav_icon.svg" alt="Navigation icon that opens navigation menu">
+                        </a>        
+
+                        <nav class="nav" id="header__nav">
+                            <a href="#works" class="nav__link fw-bold">Work</a>
+                            <a href="#about" class="nav__link fw-bold">About me</a>
+                            <a href="#" class="nav__link fw-bold resume-btn">Resume</a>
+                            <a href="#" class="nav__link nav__link--btn fw-bold hire-me-btn">Hire me</a>
+                        </nav>
+                    </div>
                 </div> <!-- /.header__inner -->
             </div> <!-- /.container -->
         </header> <!-- /.header -->
@@ -53,7 +59,7 @@
 
         <section class="intro">
             <div class="container">
-                <div class="intro__inner d-flex justify-sb align-center">
+                <div class="intro__inner align-center">
                     <div class="intro__content">
                         <h2 class="intro__subtitle">
                             Hello, I'm
@@ -86,13 +92,14 @@
                         </div>
 
                         <div class="intro__buttons d-flex">
-                            <a href="#" class="btn hire-me-btn">Hire me</a>
-                            <button class="btn btn--outline resume-btn">See my resume</button>
+                            <a href="#" class="btn hire-me-btn intro__buttons-item">Hire me</a>
+                            <button class="btn btn--outline resume-btn intro__buttons-item">See my resume</button>
                         </div>
                     </div> <!-- /.intro__content -->
 
                     <div class="intro__photo">
                         <img src="./assets/svg/intro-symbols.svg" alt="Background symbols" class="intro__symbols">
+
                         <img src="./assets/img/photo.png" alt="Portfolio owner's photo" class="intro__person">
                     </div>
                 </div> <!-- /.intro__inner -->
@@ -196,7 +203,7 @@
 
         <section class="about" id="about">
             <div class="container">
-                <div class="about__inner d-flex justify-sb">
+                <div class="about__inner d-flex justify-sb align-center">
                     <div class="about__photo">
                         <img class="img" src="./assets/img/photo_02.png" alt="Portfolio owner's photo">
                     </div>
@@ -213,8 +220,8 @@
                         </div>
 
                         <div class="about__buttons d-flex">
-                            <a href="#" class="btn hire-me-btn">Hire me</a>
-                            <a href="#" class="btn btn--outline resume-btn">See my resume</a>
+                            <a href="#" class="btn hire-me-btn about__buttons-item">Hire me</a>
+                            <a href="#" class="btn btn--outline resume-btn about__buttons-item">See my resume</a>
                         </div>
                     </div> <!-- /.about__content -->
                 </div> <!-- /.about__inner -->
@@ -345,7 +352,7 @@
 
         <footer class="footer bg-color-black text-color-gray-light">
             <div class="container">
-                <div class="footer__inner d-flex justify-sb align-center">
+                <div class="footer__inner">
                     <div class="footer__social d-flex align-center">
                         <a href="https://www.linkedin.com/in/anton-bogachuk-a7811a170/" target="_blank" class="footer__social-link">
                             <img src="./assets/svg/linkedin-footer.svg" alt="LinkedIn icon" class="footer__social-icon">
@@ -433,8 +440,8 @@
                         <button class="btn btn--outline btn--sm download-resume">Download PDF</button>
                     </div>
 
-                    <div class="modal-resume__content d-flex justify-center center">
-                        <div class="modal-resume__left-col text-right">
+                    <div class="modal-resume__content center">
+                        <div class="modal-resume__left-col">
                             <h4 class="modal-resume__exp-title fw-bold text-uppercase">Experience</h4>
                             
                             <div class="modal-resume__exp">

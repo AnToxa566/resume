@@ -14,6 +14,7 @@
 
     &__photo {
         position: relative;
+        z-index: 2;
 
         img {
             position: relative;
@@ -25,8 +26,8 @@
         &:before {
             content: "";
 
-            width: 414px;
-            height: 414px;
+            width: 75%;
+            height: 75%;
 
             background: #efefef;
 
@@ -39,13 +40,17 @@
         }
     }
 
+    &__content {
+        z-index: 3;
+    }
+
     &__title {
         font-size: 2.8125rem;
         margin-bottom: 0.5rem;
     }
 
     &__subtitle {
-        font-size: 92px;
+        font-size: 5.4rem;
         opacity: 0.05;
 
         margin-bottom: 2rem;
@@ -59,6 +64,54 @@
 
         p {
             margin-bottom: 0.5rem;
+        }
+    }
+
+    &__buttons {
+        &-item:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about {
+        &__title {
+            margin-bottom: 2rem;
+        }
+
+        &__subtitle {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        margin: 4rem 0;
+
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__photo {
+            max-width: 75%;
+            width: 100%;
+
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+
+        &__content {
+            width: 100%;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__buttons {
+            justify-content: center;
         }
     }
 }

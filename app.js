@@ -113,3 +113,16 @@ downloadResumeButtons.forEach(button => button.addEventListener('click', event =
     event.preventDefault();
     downloadFile('./assets/files/resume.pdf', 'resume.pdf');
 }))
+
+
+// ====================================
+// ======== NAVIGATION TOGGLE =========
+// ====================================
+
+const navIconLink = document.querySelector('.nav__icon-link');
+const headerNav = document.querySelector('#header__nav');
+
+navIconLink.addEventListener('click', event => {
+    event.preventDefault();
+    headerNav.style.visibility = headerNav.style.visibility === 'visible' ? 'hidden' : 'visible';
+});
