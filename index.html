@@ -1,571 +1,857 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="stylesheet" href="./assets/css/reset.css">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        
-        <title>Full-stack developer | Portfolio</title>
-    </head>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <body>
+    <title>Full-stack developer | Portfolio</title>
+  </head>
 
-        <!-- Header -->
+  <body>
+    <!-- Header -->
 
-        <header class="header">
-            <div class="container">
-                <div class="header__inner d-flex justify-sb align-center">
-                    <div class="user d-flex align-center">
-                        <div class="user__avatar">
-                            <img src="./assets/img/me.jpg" alt="Avatar">
-                        </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner d-flex justify-sb align-center">
+          <div class="user d-flex align-center">
+            <div class="user__avatar">
+              <img src="./assets/img/me.jpg" alt="Avatar" />
+            </div>
 
-                        <div class="user__content">
-                            <div class="user__name fw-bold">
-                                Anton <br> Bohachuk
-                            </div>
+            <div class="user__content">
+              <div class="user__name fw-bold">
+                Anton <br />
+                Bohachuk
+              </div>
 
-                            <div class="user__prof">
-                                Full-stack developer
-                            </div>
-                        </div>
-                    </div> <!-- /.user -->
+              <div class="user__prof">Full-stack developer</div>
+            </div>
+          </div>
+          <!-- /.user -->
 
-                    <div class="nav__inner">
-                        <a href="#" class="nav__icon-link">
-                            <img class="nav__icon" id="nav__icon" src="./assets/svg/nav_icon.svg" alt="Navigation icon that opens navigation menu">
-                        </a>        
+          <div class="nav__inner">
+            <a href="#" class="nav__icon-link">
+              <img
+                class="nav__icon"
+                id="nav__icon"
+                src="./assets/svg/nav_icon.svg"
+                alt="Navigation icon that opens navigation menu"
+              />
+            </a>
 
-                        <nav class="nav" id="header__nav">
-                            <a href="#works" class="nav__link fw-bold">Work</a>
-                            <a href="#about" class="nav__link fw-bold">About me</a>
-                            <a href="#" class="nav__link fw-bold resume-btn">Resume</a>
-                            <a href="#" class="nav__link nav__link--btn fw-bold hire-me-btn">Hire me</a>
-                        </nav>
-                    </div>
-                </div> <!-- /.header__inner -->
-            </div> <!-- /.container -->
-        </header> <!-- /.header -->
+            <nav class="nav" id="header__nav">
+              <a href="#works" class="nav__link fw-bold">Work</a>
+              <a href="#about" class="nav__link fw-bold">About me</a>
+              <a href="#" class="nav__link fw-bold resume-btn">Resume</a>
+              <a href="#" class="nav__link nav__link--btn fw-bold hire-me-btn"
+                >Hire me</a
+              >
+            </nav>
+          </div>
+        </div>
+        <!-- /.header__inner -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
 
+    <!-- Intro -->
 
-        <!-- Intro -->
+    <section class="intro">
+      <div class="container">
+        <div class="intro__inner align-center">
+          <div class="intro__content">
+            <h2 class="intro__subtitle">Hello, I'm</h2>
 
-        <section class="intro">
-            <div class="container">
-                <div class="intro__inner align-center">
-                    <div class="intro__content">
-                        <h2 class="intro__subtitle">
-                            Hello, I'm
-                        </h2>
+            <h1 class="intro__title fw-bold">Anton Bohachuk</h1>
 
-                        <h1 class="intro__title fw-bold">
-                            Anton Bohachuk
-                        </h1>
+            <h3 class="intro__body">Full-stack developer</h3>
 
-                        <h3 class="intro__body">
-                            Full-stack developer
-                        </h3>
+            <div class="social d-flex">
+              <a
+                href="https://www.linkedin.com/in/anton-bogachuk-a7811a170/"
+                target="_blank"
+                class="social__link"
+              >
+                <img
+                  src="./assets/img/linkedin-intro.png"
+                  alt="LinkedIn icon"
+                />
+              </a>
 
-                        <div class="social d-flex">
-                            <a href="https://www.linkedin.com/in/anton-bogachuk-a7811a170/" target="_blank" class="social__link">
-                                <img src="./assets/img/linkedin-intro.png" alt="LinkedIn icon">
-                            </a>
+              <a
+                href="https://github.com/AnToxa566"
+                target="_blank"
+                class="social__link"
+              >
+                <img src="./assets/img/github-intro.png" alt="GitHub icon" />
+              </a>
 
-                            <a href="https://github.com/AnToxa566" target="_blank" class="social__link">
-                                <img src="./assets/img/github-intro.png" alt="GitHub icon">
-                            </a>
+              <a
+                href="https://t.me/Antonio_Bog"
+                target="_blank"
+                class="social__link"
+              >
+                <img
+                  src="./assets/img/telegram-intro.png"
+                  alt="Telegram icon"
+                />
+              </a>
 
-                            <a href="https://t.me/Antonio_Bog" target="_blank" class="social__link">
-                                <img src="./assets/img/telegram-intro.png" alt="Telegram icon">
-                            </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100016271468965"
+                target="_blank"
+                class="social__link"
+              >
+                <img
+                  src="./assets/img/facebook-intro.png"
+                  alt="Facebook icon"
+                />
+              </a>
+            </div>
 
-                            <a href="https://www.facebook.com/profile.php?id=100016271468965" target="_blank" class="social__link">
-                                <img src="./assets/img/facebook-intro.png" alt="Facebook icon">
-                            </a>
-                        </div>
+            <div class="intro__buttons d-flex">
+              <button class="btn hire-me-btn intro__buttons-item">
+                Hire me
+              </button>
+              <button class="btn btn--outline resume-btn intro__buttons-item">
+                See my resume
+              </button>
+            </div>
+          </div>
+          <!-- /.intro__content -->
 
-                        <div class="intro__buttons d-flex">
-                            <button class="btn hire-me-btn intro__buttons-item">Hire me</button>
-                            <button class="btn btn--outline resume-btn intro__buttons-item">See my resume</button>
-                        </div>
-                    </div> <!-- /.intro__content -->
+          <div class="intro__photo">
+            <img
+              src="./assets/svg/intro-symbols.svg"
+              alt="Background symbols"
+              class="intro__symbols"
+            />
 
-                    <div class="intro__photo">
-                        <img src="./assets/svg/intro-symbols.svg" alt="Background symbols" class="intro__symbols">
+            <img
+              src="./assets/img/photo.png"
+              alt="Portfolio owner's photo"
+              class="intro__person"
+            />
+          </div>
+        </div>
+        <!-- /.intro__inner -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.intro -->
 
-                        <img src="./assets/img/photo.png" alt="Portfolio owner's photo" class="intro__person">
-                    </div>
-                </div> <!-- /.intro__inner -->
-            </div> <!-- /.container -->
-        </section> <!-- /.intro -->
+    <!-- Works -->
 
+    <div class="works" id="works">
+      <div class="container">
+        <div class="works__nav d-flex justify-center">
+          <a href="#" class="works__nav-link" data-filter="all">All</a>
+          <a href="#" class="works__nav-link" data-filter="full">Fullstack</a>
+          <a href="#" class="works__nav-link" data-filter="front">Frontend</a>
+          <a href="#" class="works__nav-link" data-filter="game">Game</a>
+        </div>
 
-        <!-- Works -->
-
-        <div class="works" id="works">
-            <div class="container">
-                <div class="works__nav d-flex justify-center">
-                    <a href="#" class="works__nav-link" data-filter="all">All</a>
-                    <a href="#" class="works__nav-link" data-filter="full">Fullstack</a>
-                    <a href="#" class="works__nav-link" data-filter="front">Frontend</a>
-                    <a href="#" class="works__nav-link" data-filter="game">Game</a>
+        <div class="portfolio d-flex flex-wrap" id="portfolio">
+          <div class="work__col" data-cat="front">
+            <a
+              href="https://github.com/AnToxa566/todo"
+              target="_blank"
+              class="td-none"
+            >
+              <div class="work__item">
+                <div class="work__item-photo-wrapper">
+                  <img
+                    src="./assets/img/todo-preview.jpg"
+                    alt="Work image"
+                    class="work__item-photo"
+                  />
                 </div>
 
-                <div class="portfolio d-flex flex-wrap" id="portfolio">
+                <div class="work__item-content text-uppercase">
+                  <div class="work__item-cat">Frontend</div>
 
-                    <div class="work__col" data-cat="front">
-                        <a href="https://github.com/AnToxa566/webovio" target="_blank" class="td-none">
-                            <div class="work__item">
-                                <div class="work__item-photo-wrapper">
-                                    <img src="./assets/img/webovio-preview.jpg" alt="Work image" class="work__item-photo">
-                                </div>
+                  <div class="work__item-title d-flex justify-sb fw-bold">
+                    ToDo
 
-                                <div class="work__item-content text-uppercase">
-                                    <div class="work__item-cat">
-                                        Frontend
-                                    </div>
+                    <div class="work__item-year">2023</div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.work__item -->
+            </a>
+          </div>
+          <!-- /.work__col -->
 
-                                    <div class="work__item-title d-flex justify-sb fw-bold">
-                                        Webovio
-
-                                        <div class="work__item-year">
-                                            2023
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- /.work__item -->
-                        </a>
-                    </div> <!-- /.work__col -->
-
-                    <div class="work__col" data-cat="game">
-                        <a href="https://github.com/AnToxa566/2048" target="_blank" class="td-none">
-                            <div class="work__item">
-                                <div class="work__item-photo-wrapper">
-                                    <img src="./assets/img/2048-preview.jpg" alt="Work image" class="work__item-photo">
-                                </div>
-
-                                <div class="work__item-content text-uppercase">
-                                    <div class="work__item-cat">
-                                        Game
-                                    </div>
-
-                                    <div class="work__item-title d-flex justify-sb fw-bold">
-                                        2048
-
-                                        <div class="work__item-year">
-                                            2023
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- /.work__item -->
-                        </a>
-                    </div> <!-- /.work__col -->
-
-                    <div class="work__col" data-cat="front">
-                        <a href="https://github.com/AnToxa566/alivio" target="_blank" class="td-none">
-                            <div class="work__item">
-                                <div class="work__item-photo-wrapper">
-                                    <img src="./assets/img/alivio-preview.jpg" alt="Work image" class="work__item-photo">
-                                </div>
-
-                                <div class="work__item-content text-uppercase">
-                                    <div class="work__item-cat">
-                                        Frontend
-                                    </div>
-
-                                    <div class="work__item-title d-flex justify-sb fw-bold">
-                                        Alivio
-
-                                        <div class="work__item-year">
-                                            2023
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- /.work__item -->
-                        </a>
-                    </div> <!-- /.work__col -->
-
-                    <div class="work__col" data-cat="front">
-                        <a href="https://github.com/AnToxa566/victory-festival-of-ukraine" target="_blank" class="td-none">
-                            <div class="work__item">
-                                <div class="work__item-photo-wrapper">
-                                    <img src="./assets/img/victory-preview.jpg" alt="Work image" class="work__item-photo">
-                                </div>
-
-                                <div class="work__item-content text-uppercase">
-                                    <div class="work__item-cat">
-                                        Frontend
-                                    </div>
-
-                                    <div class="work__item-title d-flex justify-sb fw-bold">
-                                        Victory festival
-
-                                        <div class="work__item-year">
-                                            2023
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- /.work__item -->
-                        </a>
-                    </div> <!-- /.work__col -->
-
-                    <div class="work__col" data-cat="full">
-                        <a href="https://github.com/AnToxa566/conference_laravel_vue_nova" target="_blank" class="td-none">
-                            <div class="work__item">
-                                <div class="work__item-photo-wrapper">
-                                    <img src="./assets/img/confy-preview.jpg" alt="Work image" class="work__item-photo">
-                                </div>
-    
-                                <div class="work__item-content text-uppercase">
-                                    <div class="work__item-cat">
-                                        Fullstack
-                                    </div>
-    
-                                    <div class="work__item-title d-flex justify-sb fw-bold">
-                                        Confy
-    
-                                        <div class="work__item-year">
-                                            2022
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- /.work__item -->
-                        </a>
-                    </div> <!-- /.work__col -->
-
-                    <div class="work__col" data-cat="game">
-                        <a href="https://drive.google.com/file/d/1a9bQHVSTntueWYbalOpioLqo4jVS2Gts/view?usp=sharing" target="_blank" class="td-none">
-                            <div class="work__item">
-                                <div class="work__item-photo-wrapper">
-                                    <img src="./assets/img/game-preview.jpg" alt="Work image" class="work__item-photo">
-                                </div>
-
-                                <div class="work__item-content text-uppercase">
-                                    <div class="work__item-cat">
-                                        Game
-                                    </div>
-
-                                    <div class="work__item-title d-flex justify-sb fw-bold">
-                                        Find a way out
-
-                                        <div class="work__item-year">
-                                            2021
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- /.work__item -->
-                        </a>
-                    </div> <!-- /.work__col -->
-
-                </div> <!-- /.portfolio -->
-
-                <a href="#" class="btn btn--outline btn--sm fw-bold center d-none">Load more work</a>
-            </div> <!-- /.container -->
-        </div> <!-- /.works -->
-
-
-        <!-- About -->
-
-        <section class="about" id="about">
-            <div class="container">
-                <div class="about__inner d-flex justify-sb align-center">
-                    <div class="about__photo">
-                        <img class="img" src="./assets/img/photo_02.png" alt="Portfolio owner's photo">
-                    </div>
-
-                    <div class="about__content">
-                        <h2 class="about__title fw-bold text-uppercase">About me</h2>
-                        <h3 class="about__subtitle fw-bold text-uppercase">Who am I</h3>
-
-                        <div class="about__body text-color-gray">
-                            <p>I am a beginner Fullstack developer. I am 20 years old and I am interested in developing my professional skills and experience.</p>
-                            <p>During my work, I gained skills in working with <b>frontend and backend technologies</b>, as well as experience with programming languages such as <b>JavaScript and PHP, Laravel and Vuejs frameworks.</b></p>
-                            <p>I have good communication and collaboration skills. Also, I always try to stay on top of the latest trends in the software development world and constantly learn new technologies.</p>
-                            <p>I am confident in my abilities and ready to take on new challenges. I am passionate about software development and strive to create high quality products that improve people's lives.</p>
-                        </div>
-
-                        <div class="about__buttons d-flex">
-                            <button class="btn hire-me-btn about__buttons-item">Hire me</button>
-                            <button href="#" class="btn btn--outline resume-btn about__buttons-item">See my resume</button>
-                        </div>
-                    </div> <!-- /.about__content -->
-                </div> <!-- /.about__inner -->
-            </div> <!-- /.container -->
-        </section> <!-- /.about -->
-
-
-        <!-- Review -->
-
-        <div class="review d-none">
-            <div class="container">
-                <div class="review__content text-color-white text-center center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rem ipsum praesentium consequatur amet? Inventore incidunt fugit cum natus vero, sequi accusantium est quaerat nihil magnam quae in praesentium assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rem ipsum praesentium consequatur amet?
+          <div class="work__col" data-cat="front">
+            <a
+              href="https://github.com/AnToxa566/webovio"
+              target="_blank"
+              class="td-none"
+            >
+              <div class="work__item">
+                <div class="work__item-photo-wrapper">
+                  <img
+                    src="./assets/img/webovio-preview.jpg"
+                    alt="Work image"
+                    class="work__item-photo"
+                  />
                 </div>
 
-                <div class="review__author text-center">
-                    <img class="review__author-photo center" src="https://placehold.it/100" alt="Rewie author's photo">
+                <div class="work__item-content text-uppercase">
+                  <div class="work__item-cat">Frontend</div>
 
-                    <div class="review__author-name fw-bold">Edward M.</div>
-                    <div class="review__author-com fw-light fs-italic">Marketing House</div>
-                    <div class="review__author-raiting d-flex justify-center">
-                        <img src="./assets/img/star.png" alt="Star icon">
-                        <img src="./assets/img/star.png" alt="Star icon">
-                        <img src="./assets/img/star.png" alt="Star icon">
-                        <img src="./assets/img/star.png" alt="Star icon">
-                    </div>
+                  <div class="work__item-title d-flex justify-sb fw-bold">
+                    Webovio
+
+                    <div class="work__item-year">2023</div>
+                  </div>
                 </div>
-            </div> <!-- /.container -->
-        </div> <!-- /.review -->
+              </div>
+              <!-- /.work__item -->
+            </a>
+          </div>
+          <!-- /.work__col -->
 
-
-        <!-- Blog -->
-
-        <section class="blog d-none" id="blog">
-            <div class="container">
-                <h2 class="blog__title text-center fw-bold text-uppercase">Read me</h2>
-                <h3 class="blog__subtitle text-color-gray-light text-center fw-light">Sometimes I write something smart</h3>
-
-                <div class="articles d-flex flex-wrap">
-                    <div class="article__col">
-                        <div class="article__item">
-                            
-                            <div class="article__item-date text-color-white bg-color-black text-center d-flex align-center justify-center">
-                                10 <br> june
-                            </div>
-
-                            <img class="article__item-photo img" src="https://placehold.it/370x260" alt="Article's photo">
-
-                            <h4 class="article__item-title text-uppercase fw-bold">
-                                Ten the best app in 2017
-                            </h4>
-
-                            <div class="article__item-cat text-uppercase">
-                                Category
-                            </div>
-
-                            <div class="article__item-body text-color-gray fw-light">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam voluptatibus nisi cumque adipisci quos voluptates corporis, itaque minima architecto qui doloremque suscipit laudantium repellat illum amet tempora, possimus non.
-                            </div>
-
-                            <a href="#" class="article__item-btn btn btn--outline btn--sm">Read more</a>
-
-                        </div> <!-- /.article__col -->
-                    </div> <!-- /.article__item -->
-
-                    <div class="article__col">
-                        <div class="article__item">
-                            
-                            <div class="article__item-date text-color-white bg-color-black text-center d-flex align-center justify-center">
-                                10 <br> june
-                            </div>
-
-                            <img class="article__item-photo img" src="https://placehold.it/370x260" alt="Article's photo">
-
-                            <h4 class="article__item-title text-uppercase fw-bold">
-                                Ten the best app in 2017
-                            </h4>
-
-                            <div class="article__item-cat text-uppercase">
-                                Category
-                            </div>
-
-                            <div class="article__item-body text-color-gray fw-light">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam voluptatibus nisi cumque adipisci quos voluptates corporis, itaque minima architecto qui doloremque suscipit laudantium repellat illum amet tempora, possimus non.
-                            </div>
-
-                            <a href="#" class="article__item-btn btn btn--outline btn--sm">Read more</a>
-
-                        </div> <!-- /.article__col -->
-                    </div> <!-- /.article__item -->
-
-                    <div class="article__col">
-                        <div class="article__item">
-                            
-                            <div class="article__item-date text-color-white bg-color-black text-center d-flex align-center justify-center">
-                                10 <br> june
-                            </div>
-
-                            <img class="article__item-photo img" src="https://placehold.it/370x260" alt="Article's photo">
-
-                            <h4 class="article__item-title text-uppercase fw-bold">
-                                Ten the best app in 2017
-                            </h4>
-
-                            <div class="article__item-cat text-uppercase">
-                                Category
-                            </div>
-
-                            <div class="article__item-body text-color-gray fw-light">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam voluptatibus nisi cumque adipisci quos voluptates corporis, itaque minima architecto qui doloremque suscipit laudantium repellat illum amet tempora, possimus non.
-                            </div>
-
-                            <a href="#" class="article__item-btn btn btn--outline btn--sm">Read more</a>
-
-                        </div> <!-- /.article__col -->
-                    </div> <!-- /.article__item -->
-
-                </div> <!-- /.articles -->
-
-                <div class="articles__more text-color-gray d-flex justify-end">
-                    See more posts
+          <div class="work__col" data-cat="game">
+            <a
+              href="https://github.com/AnToxa566/2048"
+              target="_blank"
+              class="td-none"
+            >
+              <div class="work__item">
+                <div class="work__item-photo-wrapper">
+                  <img
+                    src="./assets/img/2048-preview.jpg"
+                    alt="Work image"
+                    class="work__item-photo"
+                  />
                 </div>
-            </div> <!-- /.container -->
-        </section> <!-- /.blog -->
 
+                <div class="work__item-content text-uppercase">
+                  <div class="work__item-cat">Game</div>
 
-        <!-- Footer -->
+                  <div class="work__item-title d-flex justify-sb fw-bold">
+                    2048
 
-        <footer class="footer bg-color-black text-color-gray-light">
-            <div class="container">
-                <div class="footer__inner">
-                    <div class="footer__social d-flex align-center">
-                        <a href="https://www.linkedin.com/in/anton-bogachuk-a7811a170/" target="_blank" class="footer__social-link">
-                            <img src="./assets/svg/linkedin-footer.svg" alt="LinkedIn icon" class="footer__social-icon">
-                        </a>
+                    <div class="work__item-year">2023</div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.work__item -->
+            </a>
+          </div>
+          <!-- /.work__col -->
 
-                        <a href="https://github.com/AnToxa566" target="_blank" class="footer__social-link">
-                            <img src="./assets/svg/github-footer.svg" alt="GitHub icon" class="footer__social-icon">
-                        </a>
-                        
-                        <a href="https://t.me/Antonio_Bog" target="_blank" class="footer__social-link">
-                            <img src="./assets/svg/telegram-footer.svg" alt="Telegram icon" class="footer__social-icon">
-                        </a>
+          <div class="work__col" data-cat="front">
+            <a
+              href="https://github.com/AnToxa566/alivio"
+              target="_blank"
+              class="td-none"
+            >
+              <div class="work__item">
+                <div class="work__item-photo-wrapper">
+                  <img
+                    src="./assets/img/alivio-preview.jpg"
+                    alt="Work image"
+                    class="work__item-photo"
+                  />
+                </div>
 
-                        <a href="https://www.facebook.com/profile.php?id=100016271468965" target="_blank" class="footer__social-link">
-                            <img src="./assets/svg/facebook-footer.svg" alt="Facebook icon" class="footer__social-icon">
-                        </a>
-                    </div>
+                <div class="work__item-content text-uppercase">
+                  <div class="work__item-cat">Frontend</div>
 
-                    <nav class="footer__nav">
-                        <a href="#works" class="footer__nav-link">Work</a>
-                        <a href="#about" class="footer__nav-link">About Me</a>
-                        <a href="#" class="footer__nav-link resume-btn">Resume</a>
-                        <a href="#" class="footer__nav-link footer__nav-link--btn hire-me-btn">Hire me</a>
-                    </nav>
-                </div> <!-- /.footer__inner -->
-            </div> <!-- /.container -->
-        </footer> <!-- /.footer -->
+                  <div class="work__item-title d-flex justify-sb fw-bold">
+                    Alivio
 
+                    <div class="work__item-year">2023</div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.work__item -->
+            </a>
+          </div>
+          <!-- /.work__col -->
 
-        <!-- Modals -->
+          <div class="work__col" data-cat="front">
+            <a
+              href="https://github.com/AnToxa566/victory-festival-of-ukraine"
+              target="_blank"
+              class="td-none"
+            >
+              <div class="work__item">
+                <div class="work__item-photo-wrapper">
+                  <img
+                    src="./assets/img/victory-preview.jpg"
+                    alt="Work image"
+                    class="work__item-photo"
+                  />
+                </div>
 
-        <div class="modal d-flex d-none" id="modal-work">
-            <div class="modal__dialog">
+                <div class="work__item-content text-uppercase">
+                  <div class="work__item-cat">Frontend</div>
 
-                <a href="#" class="modal__dialog__close-link">
-                    <img class="modal__dialog__close-icon" src="./assets/svg/close_icon.svg" alt="Close icon">
-                </a>
-                
-                <div class="modal-work d-flex">
-                    <div class="modal-work__preview">
-                        <img class="modal-work__photo" src="https://placehold.it/800x600" alt="Project preview">
-                    </div>
+                  <div class="work__item-title d-flex justify-sb fw-bold">
+                    Victory festival
 
-                    <div class="modal-work__content">
-                        <h3 class="modal-work__title fw-bold text-uppercase">Project title</h3>
+                    <div class="work__item-year">2023</div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.work__item -->
+            </a>
+          </div>
+          <!-- /.work__col -->
 
-                        <div class="modal-work__cat text-color-gray text-uppercase">Category | 2018</div>
+          <div class="work__col" data-cat="full">
+            <a
+              href="https://github.com/AnToxa566/conference_laravel_vue_nova"
+              target="_blank"
+              class="td-none"
+            >
+              <div class="work__item">
+                <div class="work__item-photo-wrapper">
+                  <img
+                    src="./assets/img/confy-preview.jpg"
+                    alt="Work image"
+                    class="work__item-photo"
+                  />
+                </div>
 
-                        <div class="modal-work__client fw-bold">
-                            Client:
-                        </div>
-                        <div class="modal-work__com fs-italic text-color-gray">
-                            Creative Agency
-                        </div>
+                <div class="work__item-content text-uppercase">
+                  <div class="work__item-cat">Fullstack</div>
 
-                        <div class="modal-work__body text-color-gray fw-light">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis perferendis officiis explicabo quibusdam ea hic pariatur porro quae exercitationem. Tempora, explicabo animi dolore dolorem pariatur cum architecto commodi accusantium labore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis perferendis officiis explicabo quibusdam ea hic pariatur porro quae exercitationem. Tempora, explicabo animi dolore dolorem pariatur cum architecto commodi accusantium labore.
-                        </div>
+                  <div class="work__item-title d-flex justify-sb fw-bold">
+                    Confy
 
-                        <div class="modal-work__buttons d-flex justify-sb">
-                            <div class="modal-work__button d-flex align-center">
-                                <img class="modal-work__arrow" src="./assets/svg/left_arrow_icon.svg" alt="Left arrow icon">
-                                <button class="modal-work__button">Previous</button>
-                            </div>
-                            
-                            <div class="modal-work__button d-flex align-center">
-                                <button class="modal-work__button">Next</button>
-                                <img class="modal-work__arrow" src="./assets/svg/right_arrow_icon.svg" alt="Right arrow icon">
-                            </div>
-                        </div>
-                    </div> <!-- /.modal-work__content -->
-                </div> <!-- /.modal-work -->
+                    <div class="work__item-year">2022</div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.work__item -->
+            </a>
+          </div>
+          <!-- /.work__col -->
 
-            </div> <!-- /.modal__dialog -->
-        </div> <!-- /.modal -->
+          <div class="work__col" data-cat="game">
+            <a
+              href="https://drive.google.com/file/d/1a9bQHVSTntueWYbalOpioLqo4jVS2Gts/view?usp=sharing"
+              target="_blank"
+              class="td-none"
+            >
+              <div class="work__item">
+                <div class="work__item-photo-wrapper">
+                  <img
+                    src="./assets/img/game-preview.jpg"
+                    alt="Work image"
+                    class="work__item-photo"
+                  />
+                </div>
 
+                <div class="work__item-content text-uppercase">
+                  <div class="work__item-cat">Game</div>
 
-        <div class="modal d-flex d-none" id="modal-resume">
-            <div class="modal__dialog">
+                  <div class="work__item-title d-flex justify-sb fw-bold">
+                    Find a way out
 
-                <a href="#" class="modal__dialog__close-link">
-                    <img class="modal__dialog__close-icon" src="./assets/svg/close_icon.svg" alt="Close icon">
-                </a>
-                
-                <div class="modal-resume">
-                    <h3 class="modal-resume__title fw-bold text-uppercase text-center">Resume</h3>
+                    <div class="work__item-year">2021</div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.work__item -->
+            </a>
+          </div>
+          <!-- /.work__col -->
+        </div>
+        <!-- /.portfolio -->
 
-                    <div class="modal-resume__buttons d-flex justify-center">
-                        <button class="btn btn--outline btn--sm download-resume">Download PDF</button>
-                    </div>
+        <a href="#" class="btn btn--outline btn--sm fw-bold center d-none"
+          >Load more work</a
+        >
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.works -->
 
-                    <div class="modal-resume__content center">
-                        <div class="modal-resume__left-col">
-                            <h4 class="modal-resume__exp-title fw-bold text-uppercase">Experience</h4>
-                            
-                            <div class="modal-resume__exp">
-                                <div class="modal-resume__exp-years">2022 - 2023</div>
+    <!-- About -->
 
-                                <div class="modal-resume__exp-com fw-bold">GroupBWT</div>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner d-flex justify-sb align-center">
+          <div class="about__photo">
+            <img
+              class="img"
+              src="./assets/img/photo_02.png"
+              alt="Portfolio owner's photo"
+            />
+          </div>
 
-                                <div class="modal-resume__exp-job fs-italic">Trainee Fullstack</div>
+          <div class="about__content">
+            <h2 class="about__title fw-bold text-uppercase">About me</h2>
+            <h3 class="about__subtitle fw-bold text-uppercase">Who am I</h3>
 
-                                <div class="modal-resume__exp-body fw-light text-color-gray">Internship at the Zaporizhia IT company GroupBWT. During the internship, acquired the skills of working with <span class="fw-bold">Laravel</span> and <span class="fw-bold">Vuejs</span> frameworks and developed the "Confy" project designed for planning and tracking conferences.</div>
-                            </div>
-                            
-                            <div class="modal-resume__exp">
-                                <div class="modal-resume__exp-years">2021 - 2022</div>
+            <div class="about__body text-color-gray">
+              <p>
+                I am a beginner Fullstack developer. I am 20 years old and I am
+                interested in developing my professional skills and experience.
+              </p>
+              <p>
+                During my work, I gained skills in working with
+                <b>frontend and backend technologies</b>, as well as experience
+                with programming languages such as
+                <b>JavaScript and PHP, Laravel and Vuejs frameworks.</b>
+              </p>
+              <p>
+                I have good communication and collaboration skills. Also, I
+                always try to stay on top of the latest trends in the software
+                development world and constantly learn new technologies.
+              </p>
+              <p>
+                I am confident in my abilities and ready to take on new
+                challenges. I am passionate about software development and
+                strive to create high quality products that improve people's
+                lives.
+              </p>
+            </div>
 
-                                <div class="modal-resume__exp-com fw-bold">Self-development</div>
+            <div class="about__buttons d-flex">
+              <button class="btn hire-me-btn about__buttons-item">
+                Hire me
+              </button>
+              <button
+                href="#"
+                class="btn btn--outline resume-btn about__buttons-item"
+              >
+                See my resume
+              </button>
+            </div>
+          </div>
+          <!-- /.about__content -->
+        </div>
+        <!-- /.about__inner -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.about -->
 
-                                <div class="modal-resume__exp-job fs-italic">Game designer</div>
+    <!-- Review -->
 
-                                <div class="modal-resume__exp-body fw-light text-color-gray">Working on your own project, namely developing a mobile game for your own pleasure. <span class="fw-bold">C#</span> programming language and <span class="fw-bold">Unity</span> game engine were used.</div>
-                            </div>
-                        </div> <!-- modal-resume__left-col -->
+    <div class="review d-none">
+      <div class="container">
+        <div class="review__content text-color-white text-center center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rem
+          ipsum praesentium consequatur amet? Inventore incidunt fugit cum natus
+          vero, sequi accusantium est quaerat nihil magnam quae in praesentium
+          assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Iure rem ipsum praesentium consequatur amet?
+        </div>
 
-                        <div class="modal-resume__divider"></div>
+        <div class="review__author text-center">
+          <img
+            class="review__author-photo center"
+            src="https://placehold.it/100"
+            alt="Rewie author's photo"
+          />
 
-                        <div class="modal-resume__right-col">
-                            <h4 class="modal-resume__ed-title fw-bold text-uppercase">Education</h4>
+          <div class="review__author-name fw-bold">Edward M.</div>
+          <div class="review__author-com fw-light fs-italic">
+            Marketing House
+          </div>
+          <div class="review__author-raiting d-flex justify-center">
+            <img src="./assets/img/star.png" alt="Star icon" />
+            <img src="./assets/img/star.png" alt="Star icon" />
+            <img src="./assets/img/star.png" alt="Star icon" />
+            <img src="./assets/img/star.png" alt="Star icon" />
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.review -->
 
-                            <div class="modal-resume__ed">
-                                <div class="modal-resume__ed-years">2020 - 2024</div>
+    <!-- Blog -->
 
-                                <div class="modal-resume__ed-specialty fw-bold">Computer Science</div>
+    <section class="blog d-none" id="blog">
+      <div class="container">
+        <h2 class="blog__title text-center fw-bold text-uppercase">Read me</h2>
+        <h3 class="blog__subtitle text-color-gray-light text-center fw-light">
+          Sometimes I write something smart
+        </h3>
 
-                                <div class="modal-resume__ed-institution">National University "Zaporizhzhia Polytechnic", Ukraine</div>
-                            </div>
+        <div class="articles d-flex flex-wrap">
+          <div class="article__col">
+            <div class="article__item">
+              <div
+                class="article__item-date text-color-white bg-color-black text-center d-flex align-center justify-center"
+              >
+                10 <br />
+                june
+              </div>
 
-                            <h4 class="modal-resume__sk-title fw-bold text-uppercase">Skills</h4>
+              <img
+                class="article__item-photo img"
+                src="https://placehold.it/370x260"
+                alt="Article's photo"
+              />
 
-                            <div class="modal-resume__skills">
-                                <div class="modal-resume__skill-item fw-light">HTML5</div>
-                                <div class="modal-resume__skill-item fw-light">CSS3</div>
-                                <div class="modal-resume__skill-item fw-light">SCSS / SASS</div>
-                                <div class="modal-resume__skill-item fw-light">JavaScript</div>
-                                <div class="modal-resume__skill-item fw-light">Git</div>
-                                <div class="modal-resume__skill-item fw-light">MySQL</div>
-                            </div>
+              <h4 class="article__item-title text-uppercase fw-bold">
+                Ten the best app in 2017
+              </h4>
 
-                            <!-- <h4 class="modal-resume__aw-title fw-bold text-uppercase">Awards</h4>
+              <div class="article__item-cat text-uppercase">Category</div>
+
+              <div class="article__item-body text-color-gray fw-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis magnam voluptatibus nisi cumque adipisci quos
+                voluptates corporis, itaque minima architecto qui doloremque
+                suscipit laudantium repellat illum amet tempora, possimus non.
+              </div>
+
+              <a href="#" class="article__item-btn btn btn--outline btn--sm"
+                >Read more</a
+              >
+            </div>
+            <!-- /.article__col -->
+          </div>
+          <!-- /.article__item -->
+
+          <div class="article__col">
+            <div class="article__item">
+              <div
+                class="article__item-date text-color-white bg-color-black text-center d-flex align-center justify-center"
+              >
+                10 <br />
+                june
+              </div>
+
+              <img
+                class="article__item-photo img"
+                src="https://placehold.it/370x260"
+                alt="Article's photo"
+              />
+
+              <h4 class="article__item-title text-uppercase fw-bold">
+                Ten the best app in 2017
+              </h4>
+
+              <div class="article__item-cat text-uppercase">Category</div>
+
+              <div class="article__item-body text-color-gray fw-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis magnam voluptatibus nisi cumque adipisci quos
+                voluptates corporis, itaque minima architecto qui doloremque
+                suscipit laudantium repellat illum amet tempora, possimus non.
+              </div>
+
+              <a href="#" class="article__item-btn btn btn--outline btn--sm"
+                >Read more</a
+              >
+            </div>
+            <!-- /.article__col -->
+          </div>
+          <!-- /.article__item -->
+
+          <div class="article__col">
+            <div class="article__item">
+              <div
+                class="article__item-date text-color-white bg-color-black text-center d-flex align-center justify-center"
+              >
+                10 <br />
+                june
+              </div>
+
+              <img
+                class="article__item-photo img"
+                src="https://placehold.it/370x260"
+                alt="Article's photo"
+              />
+
+              <h4 class="article__item-title text-uppercase fw-bold">
+                Ten the best app in 2017
+              </h4>
+
+              <div class="article__item-cat text-uppercase">Category</div>
+
+              <div class="article__item-body text-color-gray fw-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis magnam voluptatibus nisi cumque adipisci quos
+                voluptates corporis, itaque minima architecto qui doloremque
+                suscipit laudantium repellat illum amet tempora, possimus non.
+              </div>
+
+              <a href="#" class="article__item-btn btn btn--outline btn--sm"
+                >Read more</a
+              >
+            </div>
+            <!-- /.article__col -->
+          </div>
+          <!-- /.article__item -->
+        </div>
+        <!-- /.articles -->
+
+        <div class="articles__more text-color-gray d-flex justify-end">
+          See more posts
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.blog -->
+
+    <!-- Footer -->
+
+    <footer class="footer bg-color-black text-color-gray-light">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__social d-flex align-center">
+            <a
+              href="https://www.linkedin.com/in/anton-bogachuk-a7811a170/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <img
+                src="./assets/svg/linkedin-footer.svg"
+                alt="LinkedIn icon"
+                class="footer__social-icon"
+              />
+            </a>
+
+            <a
+              href="https://github.com/AnToxa566"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <img
+                src="./assets/svg/github-footer.svg"
+                alt="GitHub icon"
+                class="footer__social-icon"
+              />
+            </a>
+
+            <a
+              href="https://t.me/Antonio_Bog"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <img
+                src="./assets/svg/telegram-footer.svg"
+                alt="Telegram icon"
+                class="footer__social-icon"
+              />
+            </a>
+
+            <a
+              href="https://www.facebook.com/profile.php?id=100016271468965"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <img
+                src="./assets/svg/facebook-footer.svg"
+                alt="Facebook icon"
+                class="footer__social-icon"
+              />
+            </a>
+          </div>
+
+          <nav class="footer__nav">
+            <a href="#works" class="footer__nav-link">Work</a>
+            <a href="#about" class="footer__nav-link">About Me</a>
+            <a href="#" class="footer__nav-link resume-btn">Resume</a>
+            <a
+              href="#"
+              class="footer__nav-link footer__nav-link--btn hire-me-btn"
+              >Hire me</a
+            >
+          </nav>
+        </div>
+        <!-- /.footer__inner -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+
+    <!-- Modals -->
+
+    <div class="modal d-flex d-none" id="modal-work">
+      <div class="modal__dialog">
+        <a href="#" class="modal__dialog__close-link">
+          <img
+            class="modal__dialog__close-icon"
+            src="./assets/svg/close_icon.svg"
+            alt="Close icon"
+          />
+        </a>
+
+        <div class="modal-work d-flex">
+          <div class="modal-work__preview">
+            <img
+              class="modal-work__photo"
+              src="https://placehold.it/800x600"
+              alt="Project preview"
+            />
+          </div>
+
+          <div class="modal-work__content">
+            <h3 class="modal-work__title fw-bold text-uppercase">
+              Project title
+            </h3>
+
+            <div class="modal-work__cat text-color-gray text-uppercase">
+              Category | 2018
+            </div>
+
+            <div class="modal-work__client fw-bold">Client:</div>
+            <div class="modal-work__com fs-italic text-color-gray">
+              Creative Agency
+            </div>
+
+            <div class="modal-work__body text-color-gray fw-light">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
+              perferendis officiis explicabo quibusdam ea hic pariatur porro
+              quae exercitationem. Tempora, explicabo animi dolore dolorem
+              pariatur cum architecto commodi accusantium labore. Lorem ipsum
+              dolor sit, amet consectetur adipisicing elit. Nobis perferendis
+              officiis explicabo quibusdam ea hic pariatur porro quae
+              exercitationem. Tempora, explicabo animi dolore dolorem pariatur
+              cum architecto commodi accusantium labore.
+            </div>
+
+            <div class="modal-work__buttons d-flex justify-sb">
+              <div class="modal-work__button d-flex align-center">
+                <img
+                  class="modal-work__arrow"
+                  src="./assets/svg/left_arrow_icon.svg"
+                  alt="Left arrow icon"
+                />
+                <button class="modal-work__button">Previous</button>
+              </div>
+
+              <div class="modal-work__button d-flex align-center">
+                <button class="modal-work__button">Next</button>
+                <img
+                  class="modal-work__arrow"
+                  src="./assets/svg/right_arrow_icon.svg"
+                  alt="Right arrow icon"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- /.modal-work__content -->
+        </div>
+        <!-- /.modal-work -->
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="modal d-flex d-none" id="modal-resume">
+      <div class="modal__dialog">
+        <a href="#" class="modal__dialog__close-link">
+          <img
+            class="modal__dialog__close-icon"
+            src="./assets/svg/close_icon.svg"
+            alt="Close icon"
+          />
+        </a>
+
+        <div class="modal-resume">
+          <h3 class="modal-resume__title fw-bold text-uppercase text-center">
+            Resume
+          </h3>
+
+          <div class="modal-resume__buttons d-flex justify-center">
+            <button class="btn btn--outline btn--sm download-resume">
+              Download PDF
+            </button>
+          </div>
+
+          <div class="modal-resume__content center">
+            <div class="modal-resume__left-col">
+              <h4 class="modal-resume__exp-title fw-bold text-uppercase">
+                Experience
+              </h4>
+
+              <div class="modal-resume__exp">
+                <div class="modal-resume__exp-years">2022 - 2023</div>
+
+                <div class="modal-resume__exp-com fw-bold">GroupBWT</div>
+
+                <div class="modal-resume__exp-job fs-italic">
+                  Trainee Fullstack
+                </div>
+
+                <div class="modal-resume__exp-body fw-light text-color-gray">
+                  Internship at the Zaporizhia IT company GroupBWT. During the
+                  internship, acquired the skills of working with
+                  <span class="fw-bold">Laravel</span> and
+                  <span class="fw-bold">Vuejs</span> frameworks and developed
+                  the "Confy" project designed for planning and tracking
+                  conferences.
+                </div>
+              </div>
+
+              <div class="modal-resume__exp">
+                <div class="modal-resume__exp-years">2021 - 2022</div>
+
+                <div class="modal-resume__exp-com fw-bold">
+                  Self-development
+                </div>
+
+                <div class="modal-resume__exp-job fs-italic">Game designer</div>
+
+                <div class="modal-resume__exp-body fw-light text-color-gray">
+                  Working on your own project, namely developing a mobile game
+                  for your own pleasure.
+                  <span class="fw-bold">C#</span> programming language and
+                  <span class="fw-bold">Unity</span> game engine were used.
+                </div>
+              </div>
+            </div>
+            <!-- modal-resume__left-col -->
+
+            <div class="modal-resume__divider"></div>
+
+            <div class="modal-resume__right-col">
+              <h4 class="modal-resume__ed-title fw-bold text-uppercase">
+                Education
+              </h4>
+
+              <div class="modal-resume__ed">
+                <div class="modal-resume__ed-years">2020 - 2024</div>
+
+                <div class="modal-resume__ed-specialty fw-bold">
+                  Computer Science
+                </div>
+
+                <div class="modal-resume__ed-institution">
+                  National University "Zaporizhzhia Polytechnic", Ukraine
+                </div>
+              </div>
+
+              <h4 class="modal-resume__sk-title fw-bold text-uppercase">
+                Skills
+              </h4>
+
+              <div class="modal-resume__skills">
+                <div class="modal-resume__skill-item fw-light">HTML5</div>
+                <div class="modal-resume__skill-item fw-light">CSS3</div>
+                <div class="modal-resume__skill-item fw-light">SCSS / SASS</div>
+                <div class="modal-resume__skill-item fw-light">JavaScript</div>
+                <div class="modal-resume__skill-item fw-light">Git</div>
+                <div class="modal-resume__skill-item fw-light">MySQL</div>
+              </div>
+
+              <!-- <h4 class="modal-resume__aw-title fw-bold text-uppercase">Awards</h4>
 
                             <div class="modal-resume__aw d-flex">
                                 <div class="modal-resume__aw-year">2016</div>
@@ -590,68 +876,99 @@
                                     <div class="modal-resume__aw-body fw-light text-color-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam optio, deleniti earum enim excepturi?</div>
                                 </div>
                             </div> -->
-                        </div> <!-- modal-resume__right-col -->
-                    </div> <!-- modal-resume__content -->
+            </div>
+            <!-- modal-resume__right-col -->
+          </div>
+          <!-- modal-resume__content -->
 
-                    <button class="modal-resume__hire-btn btn center hire-me-btn">Hire me</button>
-                </div> <!-- /.modal-resume -->
+          <button class="modal-resume__hire-btn btn center hire-me-btn">
+            Hire me
+          </button>
+        </div>
+        <!-- /.modal-resume -->
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
 
-            </div> <!-- /.modal__dialog -->
-        </div> <!-- /.modal -->
+    <div class="modal d-flex d-none" id="modal-contact">
+      <div class="modal__dialog modal__dialog--sm">
+        <a href="#" class="modal__dialog__close-link">
+          <img
+            class="modal__dialog__close-icon"
+            src="./assets/svg/close_icon.svg"
+            alt="Close icon"
+          />
+        </a>
 
-        <div class="modal d-flex d-none" id="modal-contact">
-            <div class="modal__dialog modal__dialog--sm">
+        <div class="modal-contact d-flex">
+          <div class="modal-contact__left">
+            <h3 class="modal-contact__title fw-bold text-uppercase">
+              Let's talk!
+            </h3>
 
-                <a href="#" class="modal__dialog__close-link">
-                    <img class="modal__dialog__close-icon" src="./assets/svg/close_icon.svg" alt="Close icon">
-                </a>
-                
-                <div class="modal-contact d-flex">
+            <h3 class="modal-contact__subtitle text-uppercase">
+              Call me or send me a request
+            </h3>
 
-                    <div class="modal-contact__left">
-                        <h3 class="modal-contact__title fw-bold text-uppercase">Let's talk!</h3>
+            <div class="modal-contact__content">
+              <div class="modal-contact__phone d-flex fw-light align-center">
+                <img src="./assets/svg/phone_icon.svg" alt="Phone icon" />
+                +38 (099) 112 4364
+              </div>
 
-                        <h3 class="modal-contact__subtitle text-uppercase">Call me or send me a request</h3>
+              <div class="modal-contact__email d-flex fw-light align-center">
+                <img src="./assets/svg/mail_icon.svg" alt="Mail icon" />
+                bogachuk566@gmail.com
+              </div>
+            </div>
 
-                        <div class="modal-contact__content">
-                            <div class="modal-contact__phone d-flex fw-light align-center">
-                                <img  src="./assets/svg/phone_icon.svg" alt="Phone icon">
-                                +38 (099) 112 4364
-                            </div>
+            <form
+              class="form"
+              action="https://formspree.io/f/mlekzakd"
+              method="POST"
+            >
+              <div class="form__group d-flex fd-column">
+                <label for="email-input" class="label">Adress e-mail</label>
+                <input
+                  type="text"
+                  class="input"
+                  id="email-input"
+                  name="email"
+                  placeholder="email@address.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
 
-                            <div class="modal-contact__email d-flex fw-light align-center">
-                                <img src="./assets/svg/mail_icon.svg" alt="Mail icon">
-                                bogachuk566@gmail.com
-                            </div>
-                        </div>
+              <div class="form__group d-flex fd-column">
+                <label for="request-textarea" class="label">Request</label>
+                <textarea
+                  class="textarea"
+                  id="request-textarea"
+                  name="message"
+                  placeholder="Type your request..."
+                  required
+                ></textarea>
+              </div>
 
-                        <form class="form" action="https://formspree.io/f/mlekzakd" method="POST">
-                            <div class="form__group d-flex fd-column">
-                                <label for="email-input" class="label">Adress e-mail</label>
-                                <input type="text" class="input" id="email-input" name="email" placeholder="email@address.com" autocomplete="email" required>
-                            </div>
+              <div class="d-flex justify-end">
+                <button class="btn" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.modal-contact__left -->
 
-                            <div class="form__group d-flex fd-column">
-                                <label for="request-textarea" class="label">Request</label>
-                                <textarea class="textarea" id="request-textarea" name="message" placeholder="Type your request..." required></textarea>
-                            </div>
+          <div class="modal-contact__right"></div>
+        </div>
+        <!-- /.modal-contact -->
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
 
-                            <div class="d-flex justify-end">
-                                <button class="btn" type="submit">Send</button>
-                            </div>
-                        </form>
-                    </div> <!-- /.modal-contact__left -->
+    <!-- JS -->
 
-                    <div class="modal-contact__right"></div>
-
-                </div> <!-- /.modal-contact -->
-
-            </div> <!-- /.modal__dialog -->
-        </div> <!-- /.modal -->
-
-
-        <!-- JS -->
-
-        <script type="module" src="./assets/js/index.js"></script>
-    </body>
+    <script type="module" src="./assets/js/index.js"></script>
+  </body>
 </html>
