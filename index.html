@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <title>Full-stack developer | Portfolio</title>
+    <title>Frontend developer | Portfolio</title>
   </head>
 
   <body>
@@ -35,7 +35,7 @@
                 Bohachuk
               </div>
 
-              <div class="user__prof">Full-stack developer</div>
+              <div class="user__prof">Frontend developer</div>
             </div>
           </div>
           <!-- /.user -->
@@ -53,7 +53,7 @@
             <nav class="nav" id="header__nav">
               <a href="#works" class="nav__link fw-bold">Work</a>
               <a href="#about" class="nav__link fw-bold">About me</a>
-              <a href="#" class="nav__link fw-bold resume-btn">Resume</a>
+              <a href="#" class="nav__link fw-bold download-resume">Resume</a>
               <a href="#" class="nav__link nav__link--btn fw-bold hire-me-btn"
                 >Hire me</a
               >
@@ -76,7 +76,7 @@
 
             <h1 class="intro__title fw-bold">Anton Bohachuk</h1>
 
-            <h3 class="intro__body">Full-stack developer</h3>
+            <h3 class="intro__body">Frontend developer</h3>
 
             <div class="social d-flex">
               <a
@@ -125,7 +125,9 @@
               <button class="btn hire-me-btn intro__buttons-item">
                 Hire me
               </button>
-              <button class="btn btn--outline resume-btn intro__buttons-item">
+              <button
+                class="btn btn--outline download-resume intro__buttons-item"
+              >
                 See my resume
               </button>
             </div>
@@ -167,6 +169,36 @@
           <!-- ############################# -->
           <!-- ########### WORKS ########### -->
           <!-- ############################# -->
+
+          <div class="work__col" data-cat="game">
+            <a
+              href="https://github.com/AnToxa566/hangman"
+              target="_blank"
+              class="td-none"
+            >
+              <div class="work__item">
+                <div class="work__item-photo-wrapper">
+                  <img
+                    src="./assets/img/hangman-preview.jpg"
+                    alt="Work image"
+                    class="work__item-photo"
+                  />
+                </div>
+
+                <div class="work__item-content text-uppercase">
+                  <div class="work__item-cat">Game</div>
+
+                  <div class="work__item-title d-flex justify-sb fw-bold">
+                    Hangman
+
+                    <div class="work__item-year">2023</div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.work__item -->
+            </a>
+          </div>
+          <!-- /.work__col -->
 
           <div class="work__col" data-cat="full">
             <a
@@ -437,14 +469,14 @@
 
             <div class="about__body text-color-gray">
               <p>
-                I am a beginner Full Stack developer. I am 20 years old and I am
-                interested in developing my professional skills and experience.
+                I am a Frontend developer. I am 20 years old and I am interested
+                in developing my professional skills and experience.
               </p>
               <p>
                 During my work, I gained skills in working with
                 <b>frontend and backend technologies</b>, as well as experience
                 with programming languages such as
-                <b>JavaScript and PHP, Laravel and Vuejs frameworks.</b>
+                <b>JavaScript/TypeScript, React and ExpressJS frameworks.</b>
               </p>
               <p>
                 I have good communication and collaboration skills. Also, I
@@ -465,7 +497,7 @@
               </button>
               <button
                 href="#"
-                class="btn btn--outline resume-btn about__buttons-item"
+                class="btn btn--outline download-resume about__buttons-item"
               >
                 See my resume
               </button>
@@ -700,7 +732,7 @@
           <nav class="footer__nav">
             <a href="#works" class="footer__nav-link">Work</a>
             <a href="#about" class="footer__nav-link">About Me</a>
-            <a href="#" class="footer__nav-link resume-btn">Resume</a>
+            <a href="#" class="footer__nav-link download-resume">Resume</a>
             <a
               href="#"
               class="footer__nav-link footer__nav-link--btn hire-me-btn"
@@ -850,12 +882,7 @@
                   <span class="fw-bold">Unity</span> game engine were used.
                 </div>
               </div>
-            </div>
-            <!-- modal-resume__left-col -->
 
-            <div class="modal-resume__divider"></div>
-
-            <div class="modal-resume__right-col">
               <h4 class="modal-resume__ed-title fw-bold text-uppercase">
                 Education
               </h4>
@@ -871,18 +898,51 @@
                   National University "Zaporizhzhia Polytechnic", Ukraine
                 </div>
               </div>
+            </div>
+            <!-- modal-resume__left-col -->
 
+            <div class="modal-resume__divider"></div>
+
+            <div class="modal-resume__right-col">
               <h4 class="modal-resume__sk-title fw-bold text-uppercase">
                 Skills
               </h4>
 
               <div class="modal-resume__skills">
-                <div class="modal-resume__skill-item fw-light">HTML5</div>
-                <div class="modal-resume__skill-item fw-light">CSS3</div>
-                <div class="modal-resume__skill-item fw-light">SCSS / SASS</div>
-                <div class="modal-resume__skill-item fw-light">JavaScript</div>
-                <div class="modal-resume__skill-item fw-light">Git</div>
-                <div class="modal-resume__skill-item fw-light">MySQL</div>
+                <div class="modal-resume__skill-item fw-light">HTML</div>
+                <div class="modal-resume__skill-item fw-light">CSS / SCSS</div>
+                <div class="modal-resume__skill-item fw-light">JS ES6+</div>
+                <div class="modal-resume__skill-item fw-light">React</div>
+                <div class="modal-resume__skill-item fw-light">
+                  React Router
+                </div>
+                <div class="modal-resume__skill-item fw-light">
+                  Redux Toolkit / Mobx
+                </div>
+                <div class="modal-resume__skill-item fw-light">TypeScript</div>
+                <div class="modal-resume__skill-item fw-light">
+                  Fontawesome / Tailwindcss / Ant Design
+                </div>
+                <div class="modal-resume__skill-item fw-light">
+                  ESLint / Prettier
+                </div>
+                <div class="modal-resume__skill-item fw-light">
+                  Git / npm / Vite
+                </div>
+                <div class="modal-resume__skill-item fw-light">
+                  NodeJS / ExpressJS
+                </div>
+                <div class="modal-resume__skill-item fw-light">
+                  MySQL / PostgreSQL
+                </div>
+                <div class="modal-resume__skill-item fw-light">
+                  REST API / Axios / JWT
+                </div>
+                <div class="modal-resume__skill-item fw-light">WebSockets</div>
+                <div class="modal-resume__skill-item fw-light">Docker</div>
+                <div class="modal-resume__skill-item fw-light">
+                  Jest (unit tests)
+                </div>
               </div>
 
               <!-- <h4 class="modal-resume__aw-title fw-bold text-uppercase">Awards</h4>
